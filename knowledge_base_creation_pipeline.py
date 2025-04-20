@@ -2,9 +2,9 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from config import Config
 import logging
 import os
-from knowledge_base_creation.PDF_processor import PDFProcessor
-from knowledge_base_creation.document_generator import DocumentGenerator
-from knowledge_base_creation.vector_store_manager import VectorStoreManager
+from PDF_processor import PDFProcessor
+from document_generator import DocumentGenerator
+from vector_store_manager import VectorStoreManager
 
 class KnowledgeBaseCreationPipeline:
     """
