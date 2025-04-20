@@ -2,8 +2,8 @@ import logging
 from typing import List, Dict, Set
 from langchain.docstore.document import Document
 from langchain_community.vectorstores import FAISS
-from knowledge_base_creation.local_storage_manager import LocalStorageManager
-from knowledge_base_creation.config import Config
+from local_storage_manager import LocalStorageManager
+from config import Config
 import os
 import uuid
 

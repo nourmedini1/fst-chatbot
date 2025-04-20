@@ -1,4 +1,4 @@
-from knowledge_base_creation.config import Config
+from config import Config
 from typing import List
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
