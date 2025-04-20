@@ -1,9 +1,9 @@
-from  knowledge_base_creation.vector_store_manager import VectorStoreManager
+from  vector_store_manager import VectorStoreManager
 from llm_client import LLMClient
 from prompt_templates import create_reformulation_prompt,create_query_prompt
-from knowledge_base_creation.PDF_processor import PDFProcessor
-from knowledge_base_creation.document_generator import DocumentGenerator
-from knowledge_base_creation.config import Config
+from PDF_processor import PDFProcessor
+from document_generator import DocumentGenerator
+from config import Config
 from langchain_huggingface import HuggingFaceEmbeddings
 
 class RAGService : 
@@ -14,7 +14,7 @@ class RAGService :
             encode_kwargs={'normalize_embeddings': True}
             )
         )
-        self.llm_client = LLMClient("http://192.168.1.152:8000")
+        self.llm_client = LLMClient("https://hot-rats-sit.loca.lt")
         self.pdf_processor = PDFProcessor("knowledge_base_creation/pdfs")
         self.document_generator = DocumentGenerator()
 
